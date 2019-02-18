@@ -23,6 +23,7 @@ for footer in footers:
   print(convertedfooter)
   footertext = footer.text
   print(footertext)
+  print(footer.attrib['id'])
   #print(footer.text)
   '''
   print(footer.text_content())
