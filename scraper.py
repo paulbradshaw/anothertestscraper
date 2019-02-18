@@ -18,13 +18,13 @@ print(root)
 footers = root.cssselect("div#footer")
 print(footers)
 for footer in footers:
+  footertextall = footer.text_content()
   print(footer)
   convertedfooter = lxml.html.tostring(footer)
   print(convertedfooter)
   footertext = footer.text
   print(footertext)
   print(footer.attrib['id'])
-  footertextall = footer.text_content()
   print(footertextall)
 #
 # # Write out to the sqlite database using scraperwiki library
