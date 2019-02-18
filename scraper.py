@@ -24,12 +24,7 @@ for footer in footers:
   footertext = footer.text
   print(footertext)
   print(footer.attrib['id'])
-  #print(footer.text)
-  '''
   print(footer.text_content())
-  print(lxml.html.tostring(footer))
-  print(footer.attrib['id'])
-  '''
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
