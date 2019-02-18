@@ -21,6 +21,8 @@ for footer in footers:
   print(footer)
   convertedfooter = lxml.html.tostring(footer)
   print(convertedfooter)
+  footertext = footer.text
+  print(footertext)
   #print(footer.text)
   '''
   print(footer.text_content())
