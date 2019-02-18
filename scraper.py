@@ -17,6 +17,8 @@ root.cssselect("div[align='left']")
 print(root)
 footers = root.cssselect("div#footer")
 print(footers)
+for footer in footers:
+  print(footer)
 #
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
