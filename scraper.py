@@ -19,6 +19,7 @@ footers = root.cssselect("div#footer")
 print(footers)
 record = {}
 for footer in footers:
+  convertedfooter = lxml.html.tostring(footer)
   record['mytxt'] = convertedfooter
   scraperwiki.sqlite.save(unique_keys=['mytxt'], data=record)
 #
