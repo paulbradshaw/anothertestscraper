@@ -19,7 +19,7 @@ footers = root.cssselect("div#footer")
 print(footers)
 for footer in footers:
   print(footer)
-  print(footer.text)
+  #print(footer.text)
   print(footer.text_content())
   print(lxml.html.tostring(footer))
   print(footer.attrib['id'])
