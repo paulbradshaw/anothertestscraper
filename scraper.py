@@ -19,19 +19,17 @@ footers = root.cssselect("div#footer")
 print(footers)
 record = {}
 for footer in footers:
+  record['mytxt'] = convertedfooter
+  scraperwiki.sqlite.save(unique_keys=['mytxt'], data=record)
+#
+'''
   footertextall = footer.text_content()
   print(len(footertextall))
   #the copyright symbol at position 31 causes a problem so we only grab 30 chars
-  print(footertextall[0:30])
+  #print(footertextall[0:30])
   print(footer)
   convertedfooter = lxml.html.tostring(footer)
-  print(convertedfooter)
-  footertext = footer.text
-  print(footertext)
-  print(footer.attrib['id'])
-  record['mytxt'] = lxml.html.tostring(footer)
-  scraperwiki.sqlite.save(unique_keys=['name'], data=record)
-#
+'''
 # # Write out to the sqlite database using scraperwiki library
 # scraperwiki.sqlite.save(unique_keys=['name'], data={"name": "susan", "occupation": "software developer"})
 #
