@@ -7,7 +7,7 @@ import lxml.html
 print("hello")
 #
 # # Read in a page
-html = scraperwiki.scrape("https://www.sdlauctions.co.uk/property-list/")
+html = scraperwiki.scrape("http://foo.com")
 # Show what's in the variable html
 print(html)
 #
