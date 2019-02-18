@@ -20,7 +20,7 @@ print(footers)
 for footer in footers:
   footertextall = footer.text_content()
   print(len(footertextall))
-  print(footertextall[0:25])
+  print(footertextall[0:30])
   print(footer)
   convertedfooter = lxml.html.tostring(footer)
   print(convertedfooter)
