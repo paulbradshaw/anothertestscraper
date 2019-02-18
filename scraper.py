@@ -21,6 +21,9 @@ record = {}
 for footer in footers:
   convertedfooter = lxml.html.tostring(footer)
   record['mytxt'] = convertedfooter
+  footerid = footer.attrib['id']
+  record['id'] = footerid
+  print(record)
   scraperwiki.sqlite.save(unique_keys=['mytxt'], data=record)
 #
 '''
